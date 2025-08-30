@@ -12,6 +12,8 @@ app.use(
     origin: [
       "https://cfi-frontend.vercel.app",
       "https://cfi-admin-panel.vercel.app",
+      "http://localhost:5173",
+      "http://localhost:5174",
     ],
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true,
