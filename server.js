@@ -13,6 +13,11 @@ app.use(express.json());
 // DB connection
 connectDB();
 
+// Root route
+app.get("/", (req, res) => {
+  res.json({ message: "Welcome to CFI Backend API" });
+});
+
 // Routes
 app.use("/api/hero", require("./routes/hero.routes"));
 app.use("/api/gallery", require("./routes/gallery.routes"));
